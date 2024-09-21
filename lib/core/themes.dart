@@ -22,7 +22,22 @@ class Themes {
   );
 
   static ThemeData darkTheme = ThemeData(
-    primarySwatch: Colors.blue,
     brightness: Brightness.dark,
+    colorScheme: ColorScheme.dark(
+      primary: Color(0xFFFFFFFF),
+      secondary: Color(0xFFEBEBF5),
+    ),
+    scaffoldBackgroundColor: Color(0xFF1C1B33),
+    appBarTheme: AppBarTheme(
+      color: Color(0xFFFFFFFF),
+      titleTextStyle: TextStyle(
+        color: Colors.black,
+        fontSize: 20,
+      ),
+    ),
+    textTheme: TextTheme(
+      bodyLarge: TextStyle(color: Color(0xFFFFFFFF)),
+      bodyMedium: TextStyle(color: Color(0xFFEBEBF5)),
+    ),
   );
 }
